@@ -6,4 +6,4 @@
 # whenever new changes are added; /usr/local/bin/update_zubkoland runs the
 # playbook after updating the repository.
 
-- copy: src=update_zubkoland.sh dest=/usr/local/bin/update_zubkoland mode=0755
+- copy: src=update_development.sh dest=/usr/local/bin/update_development mode=0755
