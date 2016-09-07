@@ -9,3 +9,5 @@
     - tmux
     - vim
     - man
+    - wget
+    - curl
