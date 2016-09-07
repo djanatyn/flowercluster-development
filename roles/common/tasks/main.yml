@@ -11,3 +11,4 @@
     - man
     - wget
     - curl
+    - procps
