@@ -1,11 +1,17 @@
-# Path to your oh-my-zsh installation.
-export ZSH=/home/djanatyn/.oh-my-zsh
+# check for oh-my-zsh install.
+if [ ! -f $HOME/.oh-my-zsh ]; then
+  echo "installing oh my zsh..."
+  git clone git://github.com/robbyrussell/oh-my-zsh.git $HOME/.oh-my-zsh &>/dev/null
+fi
+
+# Path to your oh-my-zsh configuration.
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="dieter"
+ZSH_THEME="flazz"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -80,9 +86,3 @@ source $ZSH/oh-my-zsh.sh
 TERM='xterm-256color'
 
 export WORKON_HOME=~/virtualenvs
-
-# The next line updates PATH for the Google Cloud SDK.
-source '/home/djanatyn/google-cloud-sdk/path.zsh.inc'
-
-# The next line enables shell command completion for gcloud.
-source '/home/djanatyn/google-cloud-sdk/completion.zsh.inc'
