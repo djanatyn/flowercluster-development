@@ -131,3 +131,7 @@ nnoremap <leader>gb :Git branch<leader>
 nnoremap <leader>go :Git checkout<leader>
 nnoremap <leader>gps :Dispatch! git push<CR>
 nnoremap <leader>gpl :Dispatch! git up<CR>
+
+" python mode
+let g:pymode_doc = 0 
+let g:pymode_rope_complete_on_dot = 0
