@@ -32,3 +32,7 @@ export TERM=screen-256color
 
 # rvm
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+# virtualenvwrapper
+export WORKON_HOME="$HOME/.virtualenvs"
+source /usr/bin/virtualenvwrapper.sh
