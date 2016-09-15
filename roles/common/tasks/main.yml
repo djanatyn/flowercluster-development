@@ -1,6 +1,5 @@
 ---
-# these packages get installed everywhere
-- name: install basic packages
+- name: install user packages
   dnf: name={{ item }} state=present
   with_items:
     - weechat
@@ -8,7 +7,30 @@
     - htop
     - tmux
     - vim
-    - man
+
+- name: install build packages
+  dnf: name={{ item }} state=present
+  with_items:
+    - automake
+    - ncurses-devel
+    - openssl-devel
+    - libyaml-devel
+    - gettext-devel
+
+- name: install system tools
+  dnf: name={{ item }} state=present
+  with_items:
+    - nmap-ncat
+    - procps
+    - pwgen
+    - tar
+    - xz
     - wget
     - curl
-    - procps
+    - man
+    - bind-utils
+    - pinentry
+
+- name: install mail packages
+  dnf: name={{ item }} state=present
+  with_items: ['offlineimap', 'msmtp']
