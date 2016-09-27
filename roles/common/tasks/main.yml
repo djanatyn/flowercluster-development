@@ -16,6 +16,8 @@
     - openssl-devel
     - libyaml-devel
     - gettext-devel
+    - libxml++-devel
+    - libcurl-devel
 
 - name: install system tools
   dnf: name={{ item }} state=present
