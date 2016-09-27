@@ -6,7 +6,15 @@
     - zsh
     - htop
     - tmux
-    - vim
+    - vim-enhanced
+
+- name: install development packages
+  dnf: name={{ item }} state=present
+  with_items:
+    - jq
+    - tig
+    - go
+    - gcloud
 
 - name: install build packages
   dnf: name={{ item }} state=present
