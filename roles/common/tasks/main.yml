@@ -6,7 +6,6 @@
     - zsh
     - htop
     - tmux
-    - vim-enhanced
 
 - name: install development packages
   dnf: name={{ item }} state=present
