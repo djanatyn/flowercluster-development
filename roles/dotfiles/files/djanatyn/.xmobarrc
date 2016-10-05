@@ -1,0 +1,14 @@
+Config {
+  font = "xft:Terminus-8"
+  , bgColor = "black"
+  , fgColor = "grey"
+  , position = TopW L 90
+  , commands = [ Run Cpu ["-L","3","-H","50","--normal","green","--high","red","-p","2","-t","cpu: <total>%"] 10
+               , Run Network "wlp6s0" ["-L","0","-H","32","--normal","green","--high","red"] 10
+               , Run Memory ["-t","mem: <usedratio>% (<cache>M)"] 10
+               , Run Swap [] 10
+               , Run Date "%a %b %_d %l:%M" "date" 10
+               , Run Battery ["-t", "battery: <left>%"] 10 ]
+  , sepChar = "%"
+  , alignSep = "}{"
+  , template = "%cpu% | %battery% | %memory% * %swap% | %wlp6s0% }{ %date% " }
