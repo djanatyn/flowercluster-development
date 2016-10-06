@@ -1,5 +1,4 @@
-# zubkoland
-ansible configuration for http://zubkoland.org/
+# flowercluster-development
+ansible configuration for flowercluster development server
 
-this git repository is stored in /var/local/zubkoland, and updates to the
-configuration are applied with /usr/local/bin/update_zubkoland
+this git repository is stored in /var/local/ansible; you can update (if you have sudo privilleges) by running update_development.
