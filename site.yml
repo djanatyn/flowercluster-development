@@ -5,5 +5,4 @@
   sudo: yes
   roles:
   - { role: dotfiles }
-  - { role: ansible }
   - { role: common }

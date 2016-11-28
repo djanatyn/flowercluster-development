@@ -5,5 +5,4 @@
   roles:
   - { role: common }
   - { role: ansible-users }
-  - { role: ansible }
   - { role: dotfiles }
