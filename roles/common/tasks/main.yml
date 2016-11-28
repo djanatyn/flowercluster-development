@@ -38,6 +38,7 @@
     - man
     - bind-utils
     - pinentry
+    - which
 
 - name: install mail packages
   dnf: name={{ item }} state=present
