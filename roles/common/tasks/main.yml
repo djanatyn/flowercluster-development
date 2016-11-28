@@ -42,3 +42,7 @@
 - name: install mail packages
   dnf: name={{ item }} state=present
   with_items: ['offlineimap', 'msmtp']
+
+- name: install python packages
+  pip: name={{ item }} state=present
+  with_items: ['virtualenvwrapper']
